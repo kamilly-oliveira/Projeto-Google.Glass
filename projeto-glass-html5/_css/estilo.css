@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+/* formatação de páginas*/
+
+body {
+    background-color: gainsboro;
+    margin: 25px;
+    margin-top: 0px;
+}
+
+div {
+    background-color: white;
+}
+
+.interface {
+    height: 170px;
+    width: 100%;
+    padding-top: 2px;
+    border-bottom: 1px #606060 solid;
+}
+
+.card-column {
+    display: flex;
+
+}
+.card-column1 {
+    width: 55%;
+    background-color: white;
+    padding: 10px;
+    border-right: 1px #606060 solid;
+    border-bottom: 1px #606060 solid;
+}
+
+.card-column2 {
+    width: 45%;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px #606060 solid;
+}
+
+.card-end {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px #606060 solid;
+}
+
+/*  textos */ 
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 16px;
+    color: #000000;
+    margin-right: 5px;
+}
+
+header#cabecalho h1{
+    font-family: FonteLogo;
+    font-size: 30px;
+    color: #606060;
+    margin-bottom: 1px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+}
+
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 7px;
+    margin-top: 2px;
+    margin-left: 6px;
+}
+
+h1 {
+    font-family: FonteLogo;
+    font-size: 30px;
+    color: #606060;
+    margin-left: 6px;
+    margin-bottom: 1px;
+}
+
+div#title-1 h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: gray;
+    margin-top: 3px;
+}
+
+div#title-1 h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: gray;
+    margin-left: 1070px;
+}
+
+div#title- h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: gray;
+    margin-top: 3px;
+}
+
+div#title- h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: gray;
+    margin-left: 430px;
+}
+
+.title-container {
+    color: #606060;
+    background-color: #dddddd;
+    font-size: 13px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 0px 10px 0px;
+
+    > h2 {
+        margin: 0px;
+    }
+}
+
+.title-container-end {
+    font-family: FonteLogo;
+    color: #606060;
+    background-color: #dddddd;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 0px 10px 0px;
+
+    > h2 {
+        margin: 0px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    > p {
+        margin-right: 5px;
+    }
+}
+
+.subtitle-container {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    background-color: #606060;
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 0px 0px 0px;
+
+    >h2 {
+        margin: 0px;
+    }
+}
+
+.end {
+    font-size: 12px;
+    color: black;
+
+    > h3 {
+        color: #606060;
+        font-size: 17px;
+    }
+}
+
+
+/* id foto  */ 
+
+figure#photo {
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+
+}
+
+figure#photo img {
+    width: 100%;
+    height: 100%;
+}
+
+figure#photo figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure#photo:hover figcaption {
+    opacity: 1;
+}
+
+/* Formatação menu */
+
+nav#menu {
+    display: flex;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    left: 45%;
+    top: 0px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+nav#menu a:hover {
+    color:  #ffffff;
+    text-decoration: underline;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#galeria ul{
+    list-style: none;
+}
+
+nav#galeria h1 {
+    display: none;
+}
+
+.image {
+    position: absolute;
+    top: 80px;
+    left: 80%;
+}
+
+/* tabela  */
+
+.tablespec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tablespec td {
+    border: 1px solid #606060 ;
+    padding: 10px;
+    vertical-align: top;
+
+}
+
+.left-column {
+    color: white;
+    background-color: #606060;
+    text-align: right;
+}
+
+.right-column {
+    color: #000000;
+    background-color: hsl(0, 1%, 81%);
+    text-align: left;
+
+}
+
+caption {
+    color: #888888;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 10px;
+}
+ /* video */
+
+video {
+    object-fit: cover;
+}
+
+.video-container {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* links */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
